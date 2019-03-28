@@ -1,0 +1,18 @@
+
+
+.block{
+border: 3px solid gold;
+width: 400px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);    
+text-align: center;
+}
+.block svg {margin: 0 10px;}
+
+.block .home-icon  {fill: rgb(187, 7, 7);}
+
+.block .home-icon,.block .user-icon , .block .Money-icon {width : 60px ;height:60px ;}
+.block .user-icon{fill: rgb(255, 80, 80);}
+.block .Money-icon {fill: rgb(12, 248, 24) ;stroke: black;}

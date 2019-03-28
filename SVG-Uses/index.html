@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG</title>
+
+    <link rel="stylesheet" href="./bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="text-center " > SVG (Scalable Vector Graphics) </h1>
+    <h2 class=" my-4 text-center" >Use cases for SVG </h2>
+    <div class="row text-center">
+    
+      <div class="col border border-black mx-1  ">
+        <h5 class="text-danger" >Use SVG As Tag &lt;img&gt;</h5>
+        <img src="img/SVG-1.svg" alt="img created with Photochop" width="100" height="100" title="SVG img"/>
+      </div>
+       
+      <div class="col border border-black  ">
+        <h5 class="text-danger" >Use SVG As Background-img</h5>
+        <div class="background-img-svg"></div>
+      </div>
+
+      <div class="col border border-black mx-1 ">
+          <h5 class="text-danger" >Use SVG  Inline (without optimizing => 1.14 KB)</h5>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 200 200">
+            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+          <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <rdf:Description rdf:about=""/>
+             </rdf:RDF>
+          </x:xmpmeta>                      
+          <?xpacket end="w"?></metadata>
+          <defs>
+              <style>
+                .cls-1 {
+                  fill: #050505;
+                  fill-rule: evenodd;
+                }
+          
+                .cls-2 {
+                  font-size: 33.333px;
+                  font-family: Centaur;
+                }
+              </style>
+            </defs>
+            <path class="cls-1" d="M29.679,9.347c52.516-25.078,93.128,49.24,93.128,49.24-15.949-7.009-23.717-2.7-24.761,13.732C82,65.363,75.786,68.81,73.965,85.674l26.285,47.4c15,23.389,5.745,41.494-12.02,36.933-6.967-1.787-14.887-17.685-8.227-18.5,23.267,14.481,9.887-11.248,9.887-11.248l-26.9-48.5c-14.4-7.871-22.94-3.132-23.984,13.3-11.55-8.007-20.541-5.9-23.3,12.924,0,0-38.916-71.647,6.694-103.314L18.171-.279Z"/>
+            <text id="OMAR" class="cls-2" transform="matrix(0.965, -0.262, 0.126, 0.465, -0.632, 153.274)">OMAR</text>
+         </svg>
+        </div>
+       
+
+    </div>
+    <div class="row text-center mt-1 ">
+        <div class="col border border-black mx-2">
+            <h5 class="text-danger" >Use The SVG  Inline ( optimized => 611 bytes)</h5>
+            <svg xmlns="http://www.w3.org/2000/svg"width="100" height="100" viewBox="0 0 200 200" ><path d="M29.679 9.347c52.516-25.078 93.128 49.24 93.128 49.24-15.949-7.009-23.717-2.7-24.761 13.732C82 65.363 75.786 68.81 73.965 85.674l26.285 47.4c15 23.389 5.745 41.494-12.02 36.933-6.967-1.787-14.887-17.685-8.227-18.5 23.267 14.481 9.887-11.248 9.887-11.248l-26.9-48.5c-14.4-7.871-22.94-3.132-23.984 13.3-11.55-8.007-20.541-5.9-23.3 12.924 0 0-38.916-71.647 6.694-103.314L18.171-.279z" fill="#050505" fill-rule="evenodd"/><text transform="matrix(.965 -.262 .126 .465 -.632 153.274)" font-size="33.333" font-family="Centaur">OMAR</text></svg>
+        </div>
+
+        <div class="col border border-black mx-2">
+            <h5 class="text-danger" >Using svg with data uri(another method) tag &lt;img&gt; </h5>
+            <!-- Encode svg to ASCII-->
+            <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22123%22%20height%3D%22171%22%3E%3Cpath%20d%3D%22M29.679%209.347c52.516-25.078%2093.128%2049.24%2093.128%2049.24-15.949-7.009-23.717-2.7-24.761%2013.732C82%2065.363%2075.786%2068.81%2073.965%2085.674l26.285%2047.4c15%2023.389%205.745%2041.494-12.02%2036.933-6.967-1.787-14.887-17.685-8.227-18.5%2023.267%2014.481%209.887-11.248%209.887-11.248l-26.9-48.5c-14.4-7.871-22.94-3.132-23.984%2013.3-11.55-8.007-20.541-5.9-23.3%2012.924%200%200-38.916-71.647%206.694-103.314L18.171-.279z%22%20fill%3D%22%23050505%22%20fill-rule%3D%22evenodd%22%2F%3E%3Ctext%20transform%3D%22matrix(.965%20-.262%20.126%20.465%20-.632%20153.274)%22%20font-size%3D%2233.333%22%20font-family%3D%22Centaur%22%3EOMAR%3C%2Ftext%3E%3C%2Fsvg%3E" alt="img tah with dataUri" width="100px" height="100px"/>
+        </div>
+
+        <div class="col border border-black mx-2">
+            <h5 class="text-danger" >Using svg with data uri(another method) background-img </h5>
+            <div class="svg-data-uri-background"></div>
+
+        </div>
+    </div>
+
+    <div class="row text-center mt-1">
+      <div class="col border border-black mx-2">
+       <h5 class="text-danger">Inline Svg can be Styling (Fill , stroke ...)</h5>
+       <svg class="Style-svg" xmlns="http://www.w3.org/2000/svg"width="100" height="100" viewBox="0 0 200 200" ><path class="Icon" d="M29.679 9.347c52.516-25.078 93.128 49.24 93.128 49.24-15.949-7.009-23.717-2.7-24.761 13.732C82 65.363 75.786 68.81 73.965 85.674l26.285 47.4c15 23.389 5.745 41.494-12.02 36.933-6.967-1.787-14.887-17.685-8.227-18.5 23.267 14.481 9.887-11.248 9.887-11.248l-26.9-48.5c-14.4-7.871-22.94-3.132-23.984 13.3-11.55-8.007-20.541-5.9-23.3 12.924 0 0-38.916-71.647 6.694-103.314L18.171-.279z" /><text class="Text" transform="matrix(.965 -.262 .126 .465 -.632 153.274)" font-size="33.333" font-family="Centaur">OMAR</text></svg>
+      </div>
+
+      <div class="col border border-black mt-1">
+        <h5 class="text-danger"> Svg Font </h5>
+          <svg xmlns="http://www.w3.org/2000/svg" width="405" height="46" viewBox="0 0 405 46"><text class="hola" data-name="HEY HOW ARE YOU" transform="matrix(1.084 0 0 1 -1 42)" font-size="58.333"  font-family="Mistral">HEY HOW ARE YOU</text></svg>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+<script src="./jquery/jquery-3.3.1.min.js"></script>
+ <script src="./bootsrap/js/bootstrap.min.js"></script> 
+<script src="my-js.js"></script>
+</body>
+</html>

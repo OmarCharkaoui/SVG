@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SVG USING EXTERNAL SOURCE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1 style="text-align:center; color: red"> Define Svg  USING EXTERNAL SOURCE </h1>
+  <h2 style="text-align:center; color: orangered"> & Use it after  </h2>
+
+  </div>
+  <div style="text-align:center; font-size: 40px" >all icons inside File Name ((using-defs.svg))</div>
+  <div class="block">
+  <svg class="home-icon" viewBox="0 0 60 60" >
+      <use href="using-defs.svg#icon-1"></use>
+    </svg>
+  <svg class="user-icon" viewBox="0 0 60 60" >
+      <use href="using-defs.svg#icon-2"></use>
+    </svg>
+  <svg class="Money-icon" viewBox="0 0 60 60" >
+      <use href="using-defs.svg#icon-3"></use>
+    </svg>
+ 
+  </div>
+
+
+
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<!-- You need this Script https://github.com/jonathantneal/svg4everybody to
+support Internet Explorer-->
+<script src="plugin/svg4everybody.min.js"></script> 
+<script >
+  svg4everybody();
+  
+  </script> 
+
+</body>
+</html>

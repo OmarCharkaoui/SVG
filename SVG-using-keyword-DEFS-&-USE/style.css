@@ -1,0 +1,20 @@
+/* Styling The Icon SVG*/
+
+
+.block{
+border: 3px solid gold;
+width: 400px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);    
+text-align: center;
+}
+.block svg {margin: 0 10px;}
+
+.block .home-icon,.block .user-icon , .block .Money-icon {width : 60px ;height:60px ;}
+.block .user-icon{fill: coral;}
+.block .Money-icon {fill: rgb(3, 86, 252) ;stroke: black;}
+
+
+

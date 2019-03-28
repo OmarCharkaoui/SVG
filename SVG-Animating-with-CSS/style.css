@@ -1,0 +1,205 @@
+.wrapp {
+
+border: 1px solid black;
+text-align: center;
+width: 200px;
+margin: 50px auto;
+
+}
+/* FILLs */
+.wrapp .Home-icon .Home{fill: red;}
+.wrapp .Home-icon .Hand-left{fill: green;}
+.wrapp .Home-icon .Hand-right{fill: rgb(220, 241, 22);}
+.wrapp .Home-icon .Zedafa{fill: rgb(2, 2, 2);}
+
+/* animation  */
+
+.wrapp .Home-icon .Home {
+    -webkit-animation: do-rotate-Home 4s infinite;
+            animation: do-rotate-Home 4s infinite;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+   
+}
+.wrapp .Home-icon .Hand-left ,
+.wrapp .Home-icon .Hand-right ,
+.wrapp .Home-icon .Zedafa {
+    -webkit-animation: do-translate-hand 4s infinite;
+            animation: do-translate-hand 4s infinite;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+
+}
+
+
+
+/* Keyframes*/
+
+@-webkit-keyframes do-rotate-Home {
+
+0%{
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+50% {
+    -webkit-transform: rotate(90deg)  rotate(0deg) ;
+            transform: rotate(90deg)  rotate(0deg) ;
+}
+80%{
+    -webkit-transform:rotate(-90deg) rotate(10deg) ;
+            transform:rotate(-90deg) rotate(10deg) ;
+}
+100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+}
+
+@keyframes do-rotate-Home {
+
+0%{
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+50% {
+    -webkit-transform: rotate(90deg)  rotate(0deg) ;
+            transform: rotate(90deg)  rotate(0deg) ;
+}
+80%{
+    -webkit-transform:rotate(-90deg) rotate(10deg) ;
+            transform:rotate(-90deg) rotate(10deg) ;
+}
+100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+}
+@-webkit-keyframes do-translate-hand {
+
+    0%{
+        -webkit-transform: translate(0%);
+                transform: translate(0%);
+    }
+    50% {
+        -webkit-transform: translate(0%,-5px) ;
+                transform: translate(0%,-5px) ;
+    }
+    100% {
+        -webkit-transform: translate(0%) ;
+                transform: translate(0%) ;
+    }
+
+
+
+}
+@keyframes do-translate-hand {
+
+    0%{
+        -webkit-transform: translate(0%);
+                transform: translate(0%);
+    }
+    50% {
+        -webkit-transform: translate(0%,-5px) ;
+                transform: translate(0%,-5px) ;
+    }
+    100% {
+        -webkit-transform: translate(0%) ;
+                transform: translate(0%) ;
+    }
+
+
+
+}
+
+/* Svg OMAR */
+.omar{
+
+    fill: white;
+    stroke: rgb(255, 255, 255);
+    stroke-width: .1px;
+    stroke-dasharray: 1 1117;
+    animation-delay: 2s; 
+    animation: gonow 4s ease infinite ;
+  }
+  
+  @keyframes gonow {
+  
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 1117; stroke-width: .1px;
+      stroke: rgb(248, 30, 30);
+  }
+    10% {
+      opacity: 1;
+      fill: none;
+      stroke-dasharray: 100 1117;
+      stroke-dashoffset:  1117;
+      stroke-width: .2px;
+      stroke: rgb(250, 60, 60);
+  
+  }
+  20% {
+    stroke-dasharray: 200 1117;
+      stroke-dashoffset:  1117;
+      stroke-width: .3px;
+      stroke: rgb(245, 87, 87);
+  }
+  30% {
+    stroke-dasharray: 300 1117;
+      stroke-dashoffset:  1117;
+      stroke-width: .4px;
+      stroke: rgb(245, 111, 111);
+  }
+  40%{
+    stroke-dasharray: 400 1117;
+      stroke-dashoffset:1117;
+      stroke-width: .5px;
+      stroke: rgb(245, 133, 133);
+  }
+  50%{
+    stroke-dasharray: 500 1117;
+    stroke-dashoffset:1117;
+    stroke-width: .6px;
+    stroke: rgb(243, 146, 146);
+  }
+  60% {
+  
+    stroke-dasharray: 600 1117;
+    stroke-dashoffset:  1117;
+    stroke-width: .7px;
+    stroke: rgb(243, 170, 170);
+  }
+    70% {
+  
+      stroke-dasharray: 700 1117;
+      stroke-dashoffset:  1117;
+      stroke-width: .8px;
+      stroke: rgb(243, 189, 189);
+  }
+  80% {
+    stroke-dasharray: 800 1117;
+      stroke-dashoffset:  1117;
+      stroke-width: .9px;
+      stroke: rgb(235, 206, 206);
+  }
+    90% {
+      fill:rgb(255, 255, 255,0);
+      stroke-dasharray: 900 1117;
+      stroke-dashoffset: 1117;
+      stroke-width: 1px;
+      
+  }
+    100% {
+      opacity: 1;
+      fill:rgb(253, 253, 253);
+      stroke-dashoffset: 0;
+      stroke-dasharray:  1117;
+      stroke-width: 1px;
+       
+  
+  }
+  
+  }
