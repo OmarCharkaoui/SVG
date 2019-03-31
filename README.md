@@ -1,2 +1,2 @@
 # SVG
-https://omarcharkaoui.github.io/SVG.github.io/.
+ https://omarcharkaoui.github.io/SVG/.
